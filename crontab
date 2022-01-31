@@ -1,0 +1,5 @@
+@reboot python3 /home/tom/discord_bot.py
+0 4 * * * kill -9 `ps -aux | grep python3 |grep -v grep |awk '{print $2}'` 2>> /home/tom/log_error ; echo "restarted by cron" >> /home/tom/output && python3 /home/tom/discord_bot.py 2>> log_error
+0 3 * * 1 echo "">/home/tom/log_error && echo ""> /home/tom/output
+
+
