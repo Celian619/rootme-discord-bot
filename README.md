@@ -17,7 +17,7 @@ This python script run a bot that print on a discord channel new challenges done
  
 Write `{"uids" : {}, "infos" : {}}` in the file.
 
-#### Create the chrontab
+#### Create the crontab
 
 Switch to a user with less privilege.
 Copy the content of crontab file and edit the default path /home/tom to your own path.
